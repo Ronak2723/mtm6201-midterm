@@ -4,23 +4,23 @@
   box-sizing: border-box;
   font-family: 'Nunito Sans', sans-serif;
 }
-/* this is body */
+
 body {
   background-color: rgb(252, 249, 249);
 }
-/* this is image */
+
 img {
   display: block;
   width: 100%;
   object-fit: cover;
 }
-/* this is for whole container */
+
 .container {
   max-width: 480px;
   margin: 0 auto;
   width: 95%;
 }
-/* this is main  */
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -88,6 +88,10 @@ img {
   margin: 0;
   padding: 0;
   border-radius: 16px;
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.card-matches .card:hover {
+  transform: translateY(-10px);
 }
 
 .card-matches img {
@@ -122,6 +126,10 @@ img {
   padding: 1em;
 }
 
+.chat:hover {
+  background: rgb(245, 241, 241);
+}
+
 .chat img {
   width: 84px;
   height: 84px;
@@ -141,6 +149,14 @@ img {
   display: flex;
   align-items: center;
   gap: 4px;
+}
+
+.btn-icon {
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.btn-icon:hover {
+  transform: scale(1.1);
 }
 
 .btn-transparent {
